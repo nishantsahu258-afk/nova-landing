@@ -210,8 +210,6 @@ src/
 
 ## AI Tools Used
 
-In accordance with the assignment instructions:
-
 - **Tools Consulted:** ChatGPT / Claude / Gemini
 - **Role in Development:**
   - AI tools were used for development assistance, such as brainstorming realistic copy for the fictional NOVA brand, checking email regex patterns, and reviewing WCAG accessibility recommendations.
