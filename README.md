@@ -3,10 +3,9 @@
 A fully responsive, modern marketing landing page for **NOVA**, a fictional AI
 productivity platform, built for the Front-End Development Intern assignment.
 
-**Live demo:** _add your deployed URL here, e.g. https://nova-landing.vercel.app_
+**Live demo:** [https://nova-landing-orpin.vercel.app/](https://nova-landing-orpin.vercel.app/)
 
-**Screenshots:** _add screenshots here after deploying, e.g._
-`./screenshots/hero.png`, `./screenshots/pricing.png`, `./screenshots/mobile.png`
+**Repository:** [https://github.com/nishantsahu258-afk/nova-landing](https://github.com/nishantsahu258-afk/nova-landing)
 
 ---
 
