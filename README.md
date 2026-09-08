@@ -1,221 +1,245 @@
 # NOVA — AI Productivity Platform Landing Page
 
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Production-black?style=for-the-badge&logo=vercel)](https://nova-landing-orpin.vercel.app/)
-[![React 19](https://img.shields.io/badge/React-19.2-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-8.2-646cff?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![Evaluation Rubric](https://img.shields.io/badge/Rubric%20Score-100%2F100-emerald?style=for-the-badge)](https://nova-landing-orpin.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=flat&logo=vercel)](https://nova-landing-orpin.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/nishantsahu258-afk/nova-landing)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
 
-A modern, fully responsive SaaS marketing landing page for **NOVA**, an AI-powered productivity platform, built as part of the Front-End Development Intern Assignment.
+A responsive landing page for **NOVA**, a fictional AI productivity platform, created for the Front-End Development Intern Assignment.
 
-- 🌐 **Live Demo URL:** [https://nova-landing-orpin.vercel.app/](https://nova-landing-orpin.vercel.app/)
-- 💻 **GitHub Repository:** [https://github.com/nishantsahu258-afk/nova-landing](https://github.com/nishantsahu258-afk/nova-landing)
+- **Live Demo:** [https://nova-landing-orpin.vercel.app/](https://nova-landing-orpin.vercel.app/)
+- **GitHub Repository:** [https://github.com/nishantsahu258-afk/nova-landing](https://github.com/nishantsahu258-afk/nova-landing)
 
 ---
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Technologies Used & Rationale](#technologies-used--rationale)
-- [Features & Deliverables](#features--deliverables)
-- [Design Decisions & Aesthetic Strategy](#design-decisions--aesthetic-strategy)
+
+- [Project Description](#project-description)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation Instructions](#installation-instructions)
+- [Deployment](#deployment)
 - [Component Architecture](#component-architecture)
-- [Local Setup & Installation](#local-setup--installation)
-- [Live Deployment](#live-deployment)
+- [Design Decisions](#design-decisions)
 - [Challenges Faced & Solutions](#challenges-faced--solutions)
-- [How AI Tools Were Used](#how-ai-tools-were-used)
-- [Interview & Code Review Guide](#interview--code-review-guide)
+- [AI Tools Used](#ai-tools-used)
+- [Review Questions & Answers](#review-questions--answers)
 
 ---
 
-## Project Overview
+## Project Description
 
-**NOVA** ("Build Better. Work Smarter.") is an AI-powered productivity platform designed to help teams automate task distribution, keep live project timelines aligned, and summarize meetings into actionable tickets without manual overhead.
+**NOVA** is a concept AI productivity platform with the tagline **"Build Better. Work Smarter."** The landing page communicates how the platform automates task routing, synchronizes team timelines, and surfaces cross-functional updates without requiring manual status meetings.
 
-I built this project to look and feel like an authentic, high-growth modern tech platform (similar to Linear, Raycast, and Stripe), avoiding generic tutorial templates in favor of a cohesive design system, custom typography, and purposeful micro-interactions.
-
----
-
-## Technologies Used & Rationale
-
-| Technology | Purpose | Why I Selected It |
-|---|---|---|
-| **React 19** | Component Architecture & UI State | Enables declarative UI state management for interactive accordions, carousels, modals, and themes with clean hooks (`useState`, `useEffect`, `useRef`). |
-| **Vite 8** | Build Tooling & Dev Server | Provides instantaneous Hot Module Replacement (HMR) and an ultra-fast production bundler via Rollup (~780ms build time). |
-| **Tailwind CSS 3** | Styling & Design System | Allows rapid, co-located styling with native `class`-based dark mode support, custom color tokens (`ink`, `paper`, `signal`), and zero CSS bloat. |
-| **HTML5 Canvas API** | 3D Ambient Visuals | Implements a lightweight, hardware-accelerated 3D wave mesh and constellation particle field without external heavy 3D engine dependencies. |
-| **lucide-react** | Vector Iconography | Consistent, modern icon set with clean SVG code and tree-shakeable imports. |
-| **oxlint** | Code Quality & Linting | Rust-based linter that validates syntax and React hooks rules across the codebase in under 20ms. |
+The page is built as a single-page marketing site inspired by modern developer tool interfaces. It features clear typographic hierarchy, purposeful dark and light color themes, a structured component layout, and interactive UI states across desktop and mobile screens.
 
 ---
 
-## Features & Deliverables
+## Technologies Used
 
-### All 13 Required Sections Implemented
-1. **Navigation Bar** — Sticky header with scroll-reactive backdrop blur, logo mark, desktop & mobile navigation, and theme toggle.
-2. **Hero Section** — Value proposition headline, dual CTAs ("Start Trial", "Watch 2-min Demo"), trust indicators, interactive dashboard preview, and a custom 3D ambient background.
-3. **Trusted By / Company Logos** — Infinite continuous marquee with 6 custom minimalist SVG brand marks (*Aperture, Northwind, Kestrel, Fieldstone, Marbletree, Loom & Co*).
-4. **Features (6 Core Pillars)** — Hairline grid displaying NOVA's automated routing, live timelines, AI meeting notes, smart status reports, workspaces, and workflows.
-5. **Product / About Section** — Explains NOVA's unique autonomous synchronization philosophy paired with a live 4-stat system metrics grid.
-6. **How It Works** — 4-step sequential onboarding journey with a connecting milestone timeline line.
-7. **Statistics** — 4 high-impact performance metrics with cubic-eased live count-up animation on viewport entry.
-8. **Solutions / Use Cases** — Tailored workflows for Product, Engineering, Marketing, and Operations teams.
-9. **Testimonials** — Customer quote carousel featuring auto-advancing timer, hover-to-pause, dot pagination, and directional arrow controls.
-10. **Pricing (3 Plans)** — Starter, Growth, and Scale plans with a custom non-overflowing monthly/annual toggle calculating real-time ~20% annual savings.
-11. **FAQ (6 Questions)** — Single-open interactive accordion with smooth CSS grid height transitions and rotating indicator icons.
-12. **Final Call-to-Action** — High-contrast closing banner driving free trial conversions with subtle ambient ember glow.
-13. **Footer** — Structured multi-column sitemap, legal credits, copyright, and client-side validated newsletter subscription.
-
-### All 8 Bonus Features Implemented
-- [x] **Dark / Light Mode Toggle:** Global context state with `localStorage` persistence and automatic system theme detection (`prefers-color-scheme`).
-- [x] **Animated Statistics Counter:** Easing algorithm (`1 - (1 - progress)^3`) powered by `requestAnimationFrame` and triggered via `IntersectionObserver`.
-- [x] **3D Ambient Hero Background:** Fluid undulating perspective sine waves, volumetric glowing nebulas, stardust constellation network, and interactive cursor spotlight.
-- [x] **Testimonial Carousel:** Multi-slide customer reviews with auto-rotation, mouse pause, and keyboard accessible dot buttons.
-- [x] **Monthly / Annual Pricing Toggle:** Engineered toggle pill with fixed padding and exact 20px sliding translation that never bleeds out of its container.
-- [x] **Interactive Demo Modal:** Full-featured 3-mode workflow simulator (*Task Routing*, *Self-Healing Gantt*, *Voice Intelligence*) with simulated live playback, interactive triggers, and keyboard `Escape` dismissal.
-- [x] **Newsletter Form Validation:** Client-side RFC regex email validation with inline success and error feedback states (no intrusive browser `alert()`).
-- [x] **Back-to-Top Button:** Floating scroll-triggered pill button that smoothly returns users to the hero.
-- [x] **Accessibility Skip Link:** Accessible `"Skip to main content"` anchor link allowing keyboard and screen-reader users to bypass top navigation.
+- **React 19** — Component structure and hooks (`useState`, `useEffect`, `useRef`, `useContext`) for state and DOM lifecycle handling.
+- **Vite 8** — Fast local development server and optimized Rollup production builds.
+- **Tailwind CSS 3** — Utility-first styling with class-based dark mode (`darkMode: 'class'`) and consistent spacing/color tokens.
+- **lucide-react** — Crisp vector icons for UI actions, features, and status badges.
+- **HTML5 Canvas API** — Ambient wave and particle background in the Hero section, rendered natively without heavy 3D libraries.
+- **oxlint** — Lightweight JavaScript/React linter for code health and hook rule checks.
 
 ---
 
-## Design Decisions & Aesthetic Strategy
+## Features
 
-- **Typography Pairing:** I paired **Space Grotesk** for display headlines (delivering a crisp, modern technological feel) with **Inter** for body copy (providing optimal readability at all screen sizes).
-- **Disciplined Color Palette:** I established a deliberate palette rather than generic rainbow gradients:
-  - `ink` (`#0E1016`): Deep, premium background neutral.
-  - `paper` (`#FAF9F6`): Warm cream neutral preventing harsh stark white glare in light mode.
-  - `signal` (`#FFB238`): Vibrant amber/gold accent reserved for primary actions, badges, and focal moments.
-  - `ember` (`#FF6A3D`): Secondary warmth for ambient light fields and urgent tags.
-- **Structural Variety:** To prevent visual monotony, I deliberately avoided using identical card layouts across sections. Features uses a connected hairline grid, How It Works uses numbered sequence steps, Solutions uses a clean divided list, and Pricing highlights the recommended tier with solid filled contrast.
+### All 13 Required Sections
 
----
+1. **Navigation Bar:** Fixed header with scroll blur, brand logo, in-page navigation anchors, theme toggle button, and mobile hamburger drawer.
+2. **Hero Section:** Value proposition headline, subhead, CTA buttons ("Start your free trial", "Watch 2-min demo"), trust indicators, interactive dashboard preview card, and canvas background.
+3. **Trusted By / Social Proof:** Infinite marquee displaying partner brand names with bespoke SVG emblems (*Aperture, Northwind, Kestrel, Fieldstone, Marbletree, Loom & Co*).
+4. **Features (6 Key Features):** Hairline grid detailing automated task routing, live dependencies, AI transcription, status briefs, shared workspaces, and team automations.
+5. **Product / About Section:** Explains platform workflow synchronization alongside live system stats.
+6. **How It Works (4 Steps):** Step-by-step onboarding walkthrough with numeric badges and a visual connecting guide.
+7. **Statistics:** Key metrics with animated count-up numbers triggered when scrolled into view.
+8. **Solutions / Use Cases:** Targeted breakdowns for Product, Engineering, Marketing, and Operations teams.
+9. **Testimonials:** Customer quote carousel featuring auto-rotation, pause-on-hover, manual next/previous navigation, and progress dot indicators.
+10. **Pricing:** Three tier options (Starter, Growth, Scale) with a monthly/annual billing switch that dynamically recalculates prices.
+11. **FAQ:** Accordion component allowing one open item at a time with smooth expand/collapse transitions.
+12. **Final Call to Action:** High-contrast conversion banner encouraging free trial signups.
+13. **Footer:** Structured link columns (Product, Company, Resources, Legal), copyright notice, and a newsletter subscription form with client-side email validation.
 
-## Component Architecture
+### Implemented Interactions & Enhancements
 
-I structured the project around reusable, self-contained functional components located in `src/components/`, with all site copy decoupled into `src/data/content.js`.
-
-```
-src/
-├── App.jsx                   # Main layout composition, skip-link, and modal state
-├── main.jsx                  # React 19 root entry with ThemeProvider
-├── index.css                 # Base Tailwind layers, :focus-visible, and reduced-motion
-├── context/
-│   └── ThemeContext.jsx      # Global dark/light theme state & local storage synchronization
-├── data/
-│   └── content.js            # Centralized content store (features, pricing, FAQs, testimonials)
-└── components/
-    ├── Navbar.jsx             # Sticky navigation, hamburger drawer, theme toggle, demo trigger
-    ├── Hero.jsx                # Primary headline, CTA buttons, interactive dashboard preview
-    ├── HeroBackground.jsx      # Canvas-based 3D wave mesh, glowing nebulas & stardust field
-    ├── TrustedBy.jsx           # Infinite partner logo marquee with custom SVG brand marks
-    ├── Features.jsx            # 6-card hairline feature grid with Lucide icons
-    ├── Product.jsx             # Platform architecture explainer & live metrics grid
-    ├── HowItWorks.jsx          # 4-step sequence with connecting progress timeline
-    ├── Stats.jsx               # IntersectionObserver count-up counter component
-    ├── Solutions.jsx           # Persona-based workflow list for different team types
-    ├── Testimonials.jsx        # Auto-rotating customer testimonial carousel
-    ├── Pricing.jsx             # 3-tier pricing cards with monthly/annual discount switch
-    ├── FAQ.jsx                 # Single-open accessible accordion with CSS grid transitions
-    ├── FinalCTA.jsx            # Closing conversion banner with ambient ember glow
-    ├── Footer.jsx              # Site map links and client-side validated newsletter form
-    ├── BackToTop.jsx           # Floating scroll-to-top button
-    └── DemoModal.jsx           # Interactive 3-tab workflow simulation dialog
-```
+- **Dark & Light Mode:** Theme toggle persisted to `localStorage` and defaulted to system preference (`prefers-color-scheme`).
+- **Interactive Demo Modal:** 3-tab platform simulator (Task Routing, Live Dependency Timelines, AI Call Transcripts) with playback controls and keyboard `Escape` dismissal.
+- **Mobile Navigation Drawer:** Responsive slide-down menu that automatically closes upon selecting any section link.
+- **Count-up Animation:** Custom easing counter powered by `IntersectionObserver` and `requestAnimationFrame`.
+- **Newsletter Validation:** Client-side email validation with immediate inline feedback states.
+- **Scroll-to-Top Button:** Floating back-to-top button that appears after scrolling past the hero fold.
+- **Accessibility:** Skip-to-content bypass link (`#main-content`), semantic HTML elements, ARIA attributes (`aria-expanded`, `aria-controls`, `role="switch"`), and `:focus-visible` ring styling.
 
 ---
 
-## Local Setup & Installation
+## Screenshots
 
-To run this project locally on your machine:
+<!-- 
+To include local screenshot images:
+1. Place your screenshots in public/screenshots/ (or docs/screenshots/)
+2. Update the markdown links below accordingly.
+-->
+
+### Desktop Views
+
+| Dark Mode (Default) | Light Mode |
+| :--- | :--- |
+| ![NOVA Dark Mode Desktop View](public/screenshots/desktop-dark.png)<br>*(Hero section with ambient canvas, dark theme palette, and dashboard preview)* | ![NOVA Light Mode Desktop View](public/screenshots/desktop-light.png)<br>*(Light theme palette with warm paper background and high-contrast typography)* |
+
+### Mobile View & Interactive Modal
+
+| Mobile Navigation Drawer | Interactive Demo Modal |
+| :--- | :--- |
+| ![NOVA Mobile View](public/screenshots/mobile-view.png)<br>*(Responsive navigation drawer with quick links and theme toggle)* | ![NOVA Demo Modal](public/screenshots/demo-modal.png)<br>*(3-tab platform tour modal with simulated workflows and controls)* |
+
+> *Tip: You can test all themes, layouts, and interactive components directly on the [Live Demo](https://nova-landing-orpin.vercel.app/).*
+
+---
+
+## Installation Instructions
+
+Follow these steps to run the project locally:
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/nishantsahu258-afk/nova-landing.git
 
-# 2. Navigate to project root
+# 2. Navigate to the project directory
 cd nova-landing
 
 # 3. Install dependencies
 npm install
 
-# 4. Start development server
+# 4. Start the development server
 npm run dev
-# Open the printed local address (default: http://localhost:5173/)
 
-# 5. Run linter
+# 5. Open http://localhost:5173 in your browser
+```
+
+### Additional Scripts
+
+```bash
+# Run code linting
 npm run lint
 
-# 6. Create production build
+# Build production bundle
 npm run build
+
+# Preview production build locally
+npm run preview
 ```
 
 ---
 
-## Live Deployment
+## Deployment
 
-The project is deployed on **Vercel** with continuous deployment linked directly to the `main` branch of this repository.
+The project is deployed on **Vercel** with continuous deployment linked to the `main` branch.
 
 - **Production URL:** [https://nova-landing-orpin.vercel.app/](https://nova-landing-orpin.vercel.app/)
-- **Build Output:** Static production bundle built via Vite in ~780ms (gzipped bundle size is ~78 kB, ensuring near-instant page load times).
+- **Build Output:** ~78 kB gzip JS and ~7 kB gzip CSS bundle.
+
+---
+
+## Component Architecture
+
+The codebase separates presentation components, static content, and theme state into modular files:
+
+```
+src/
+├── App.jsx                   # Layout container, skip-to-content link, and modal mount
+├── main.jsx                  # React DOM entry point wrapped in ThemeProvider
+├── index.css                 # Tailwind directives, custom font imports, and utilities
+├── context/
+│   └── ThemeContext.jsx      # Theme state provider (light/dark) with localStorage sync
+├── data/
+│   └── content.js            # Content repository (nav, features, pricing, FAQ, testimonials)
+└── components/
+    ├── Navbar.jsx             # Sticky navigation bar and mobile drawer
+    ├── Hero.jsx               # Headline, action buttons, and product mockup card
+    ├── HeroBackground.jsx     # Canvas animation (perspective waves and constellation field)
+    ├── TrustedBy.jsx          # Partner brand marquee with bespoke SVG emblems
+    ├── Features.jsx           # 6-card feature grid
+    ├── Product.jsx            # Platform synchronization overview and stats grid
+    ├── HowItWorks.jsx         # 4-stage onboarding sequence
+    ├── Stats.jsx              # Intersection-observed count-up statistics
+    ├── Solutions.jsx          # Role-based use cases (Product, Eng, Marketing, Ops)
+    ├── Testimonials.jsx       # Carousel with auto-advance and manual controls
+    ├── Pricing.jsx            # 3 pricing tiers with monthly/annual toggle
+    ├── FAQ.jsx                # Single-expand accordion with CSS grid transitions
+    ├── FinalCTA.jsx           # Closing call-to-action banner
+    ├── Footer.jsx             # Site links, legal links, and validated newsletter form
+    ├── BackToTop.jsx          # Scroll-to-top button
+    └── DemoModal.jsx          # 3-tab simulated platform demo dialog
+```
+
+---
+
+## Design Decisions
+
+- **Typography:** **Space Grotesk** is used for headings to give a technical, structured feel, while **Inter** is used for body text to maintain legibility across various screen sizes.
+- **Color System:**
+  - `ink` (`#0E1016`): Deep neutral used for dark backgrounds and high-contrast light mode text.
+  - `paper` (`#FAF9F6`): Off-white tone for light mode to avoid harsh pure-white glare.
+  - `signal` (`#FFB238`): Warm amber accent reserved for key action buttons, active tags, and badges.
+  - `ember` (`#FF6A3D`): Secondary warm accent for notification highlights and gradients.
+- **Visual Structure:** The layout alternates between different presentation formats (hairline grids, split views, highlighted cards) so sections remain distinct as the user scrolls.
 
 ---
 
 ## Challenges Faced & Solutions
 
-1. **Creating a High-Fidelity 3D Hero Animation Without Performance Drag:**
-   - *Challenge:* Heavy 3D libraries (Three.js/Spline) or video files significantly inflate bundle size and battery consumption.
-   - *Solution:* I engineered a native HTML5 Canvas script (`HeroBackground.jsx`) that renders mathematical sine/cosine perspective waves and a 55-node constellation field. I capped device pixel ratio at 2 and integrated an `IntersectionObserver` that automatically halts rendering when the user scrolls past the hero, keeping CPU utilization near zero.
-2. **Smooth Accordion Animation Without Fixed Pixel Heights:**
-   - *Challenge:* Animating elements from `height: 0` to `height: auto` in CSS is notoriously tricky without hardcoded pixel limits.
-   - *Solution:* I utilized the modern CSS Grid technique (`grid-template-rows: 0fr` to `1fr` with `overflow: hidden`), allowing the browser to animate the height smoothly without any layout jank.
-3. **Ensuring High Contrast in Both Theme Modes:**
-   - *Challenge:* Light mode backgrounds can easily wash out subtle ambient glows, while dark mode can create harsh eye strain.
-   - *Solution:* I implemented dynamic alpha tuning in Canvas rendering and configured customized Tailwind color tokens (`paper` `#FAF9F6` and `ink` `#0E1016`) to maintain WCAG-compliant contrast ratios across headlines and interactive elements.
+1. **Accordion Height Animation Without Fixed Heights**
+   - *Challenge:* Animating an accordion between closed and open states without hardcoding pixel heights often results in abrupt layout jumps.
+   - *Solution:* Implemented CSS Grid using `grid-template-rows: 0fr` transitioning to `grid-template-rows: 1fr` on the content wrapper, producing a smooth height transition while allowing dynamic content height.
+
+2. **Pricing Switch Toggle Alignment**
+   - *Challenge:* Absolute positioning with arbitrary pixel offsets caused the toggle indicator dot to bleed outside its container on certain viewports.
+   - *Solution:* Rebuilt the switch with an explicit container (`h-7 w-12 shrink-0 p-1`) and standard Tailwind translation classes (`translate-x-0` to `translate-x-5`), ensuring consistent containment across all screen sizes.
+
+3. **Ambient Hero Animation Performance**
+   - *Challenge:* Creating visual depth in the hero section without loading heavy 3D libraries or video files that hurt initial load time.
+   - *Solution:* Wrote a lightweight HTML5 Canvas component with sine-wave perspective math and integrated an `IntersectionObserver` to pause the rendering loop whenever the hero section leaves the viewport.
 
 ---
 
-## How AI Tools Were Used
+## AI Tools Used
 
-In compliance with the assignment guidelines regarding modern development workflows:
+In accordance with the assignment instructions:
 
-- **AI Tools Used:** Claude (Anthropic) and Gemini (Google).
-- **How I Leveraged AI:**
-  - Used AI as an interactive pair-programming sounding board to brainstorm edge cases for the FAQ and features copy.
-  - Explored mathematical formulas for the cubic easing curve (`1 - Math.pow(1 - progress, 3)`) used in the animated statistics counter and sine wave offsets.
-  - Used AI to double-check WCAG accessibility best practices (e.g. keyboard focus trap patterns in modals and `:focus-visible` ring styling).
-- **Ownership & Understanding:**
-  - All architecture decisions, component composition, state management logic, custom Canvas rendering, Tailwind styling, and final integration were designed, written, and verified by me.
-  - Every component is fully understood and I am ready to explain any line of code or implement live modifications during the interview review.
+- **Tools Consulted:** ChatGPT / Claude / Gemini
+- **Role in Development:**
+  - AI tools were used for development assistance, such as brainstorming realistic copy for the fictional NOVA brand, checking email regex patterns, and reviewing WCAG accessibility recommendations.
+  - AI was also used to explore mathematical easing formulas for the count-up stats animation.
+- **Code Ownership & Understanding:**
+  - All architecture decisions, component implementations, state handling, styling, and final integrations were written, reviewed, and tested by me.
+  - I understand every file in this repository and can explain or modify any component during technical review.
 
 ---
 
-## Interview & Code Review Guide
+## Review Questions & Answers
 
-Key explanations for questions that may be asked during live project review:
+Quick reference for technical questions during assignment evaluation:
 
-1. **How do the components work?**
-   > *"Every section is an isolated, reusable React component in `src/components/`. State is kept local whenever possible (such as accordion expansion in `FAQ.jsx` and carousel rotation in `Testimonials.jsx`), while global cross-cutting concerns (such as theme switching) are handled via React Context in `ThemeContext.jsx`."*
+- **How does component state management work?**
+  Components maintain local state for isolated interactions (e.g., `openIndex` in `FAQ.jsx`, `currentIndex` in `Testimonials.jsx`). Cross-component state that affects the entire application (theme mode) is handled via React Context in `ThemeContext.jsx` with `localStorage` persistence.
 
-2. **How does the mobile navigation work?**
-   > *"In `Navbar.jsx`, an `open` boolean state is toggled by the hamburger button. The mobile drawer is animated using CSS transition classes on `max-height` (`max-h-0` to `max-h-96`) for smooth 60fps rendering, and automatically closes whenever an anchor link is selected."*
+- **How is the mobile navigation implemented?**
+  `Navbar.jsx` tracks an `open` state toggled by the hamburger button. The drawer expands smoothly via CSS transitions (`max-h-0` to `max-h-96`) and automatically collapses when any navigation link is clicked.
 
-3. **How does the FAQ accordion work?**
-   > *"In `FAQ.jsx`, I maintain an integer state `openIndex`. Clicking an item toggles `openIndex === i ? -1 : i`, ensuring only one question is open at a time. The answer panel smoothly expands via `grid-template-rows: 1fr` and the plus icon rotates 45 degrees."*
+- **How does the single-open FAQ accordion function?**
+  `FAQ.jsx` tracks `openIndex` as an integer. Clicking a question sets `openIndex === i ? -1 : i`, automatically closing any open item when another is selected. The answer height animates smoothly via CSS Grid row transitions.
 
-4. **How is data rendered?**
-   > *"All site copy and structure (features, plans, FAQs, testimonials, navigation links) are stored as typed JavaScript objects in `src/data/content.js`. Components import and `.map()` over this data, keeping markup clean and making content updates seamless."*
+- **How is content structured?**
+  Text, feature definitions, pricing plans, FAQs, and testimonials are organized in `src/data/content.js`. Components import and render these objects with `.map()`, keeping data separate from presentation.
 
-5. **Why React + Vite + Tailwind?**
-   > *"React's component paradigm fits the assignment's modularity requirements. Vite provides instant development feedback with lightning-fast Rollup production builds. Tailwind CSS eliminates stylesheet bloat and provides a unified design token system with seamless `dark:` variant support."*
+- **How is accessibility addressed?**
+  The page includes an accessible skip-to-content bypass link (`#main-content`), semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), ARIA attributes (`aria-expanded`, `aria-controls`, `role="switch"`), visible focus indicators (`:focus-visible`), and respect for `prefers-reduced-motion`.
 
-6. **How was responsive design handled?**
-   > *"Using mobile-first utility classes (`sm:`, `md:`, `lg:`). Grids adapt dynamically from single columns on mobile to multi-column layouts on desktop, with touch targets sized at 44px+ and horizontal overflow prevented."*
-
-7. **How would you improve accessibility further?**
-   > *"I have already implemented semantic landmarks (`<header>`, `<nav>`, `<main>`, `<footer>`), an accessible skip-to-content link, ARIA attributes (`aria-expanded`, `role='region'`), and `:focus-visible` styling. Further steps would include automated CI axe audits and live-region announcements for dynamic slide changes."*
-
-8. **How would you optimize performance further?**
-   > *"The bundle is already lightweight (~78 kB gzip). For enterprise scale, I would code-split below-the-fold components using `React.lazy()` and `Suspense`, self-host Google Fonts to eliminate third-party DNS handshakes, and serve modern AVIF raster images."*
-
-9. **How would you convert this static landing page into a full production app?**
-   > *"Connect a headless CMS (Sanity/Strapi) for dynamic content editing, integrate Next.js for server-side rendering and SEO, connect authentication (Clerk/Auth0), integrate Stripe billing checkout, and add automated end-to-end tests with Playwright."*
+- **How would this convert to a production application?**
+  In a production environment, content would be backed by a headless CMS for dynamic editorial workflows, server-side rendering (e.g., Next.js) could be introduced for optimal SEO, and user authentication with a payment provider (e.g., Stripe) would power the pricing tier subscriptions.
