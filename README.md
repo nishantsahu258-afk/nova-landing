@@ -25,7 +25,6 @@ A responsive landing page for **NOVA**, a fictional AI productivity platform, cr
 - [Design Decisions](#design-decisions)
 - [Challenges Faced & Solutions](#challenges-faced--solutions)
 - [AI Tools Used](#ai-tools-used)
-- [Review Questions & Answers](#review-questions--answers)
 
 ---
 
@@ -210,28 +209,4 @@ src/
   - AI was also used to explore mathematical easing formulas for the count-up stats animation.
 - **Code Ownership & Understanding:**
   - All architecture decisions, component implementations, state handling, styling, and final integrations were written, reviewed, and tested by me.
-  - I understand every file in this repository and can explain or modify any component during technical review.
-
----
-
-## Review Questions & Answers
-
-Quick reference for technical questions during assignment evaluation:
-
-- **How does component state management work?**
-  Components maintain local state for isolated interactions (e.g., `openIndex` in `FAQ.jsx`, `currentIndex` in `Testimonials.jsx`). Cross-component state that affects the entire application (theme mode) is handled via React Context in `ThemeContext.jsx` with `localStorage` persistence.
-
-- **How is the mobile navigation implemented?**
-  `Navbar.jsx` tracks an `open` state toggled by the hamburger button. The drawer expands smoothly via CSS transitions (`max-h-0` to `max-h-96`) and automatically collapses when any navigation link is clicked.
-
-- **How does the single-open FAQ accordion function?**
-  `FAQ.jsx` tracks `openIndex` as an integer. Clicking a question sets `openIndex === i ? -1 : i`, automatically closing any open item when another is selected. The answer height animates smoothly via CSS Grid row transitions.
-
-- **How is content structured?**
-  Text, feature definitions, pricing plans, FAQs, and testimonials are organized in `src/data/content.js`. Components import and render these objects with `.map()`, keeping data separate from presentation.
-
-- **How is accessibility addressed?**
-  The page includes an accessible skip-to-content bypass link (`#main-content`), semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), ARIA attributes (`aria-expanded`, `aria-controls`, `role="switch"`), visible focus indicators (`:focus-visible`), and respect for `prefers-reduced-motion`.
-
-- **How would this convert to a production application?**
-  In a production environment, content would be backed by a headless CMS for dynamic editorial workflows, server-side rendering (e.g., Next.js) could be introduced for optimal SEO, and user authentication with a payment provider (e.g., Stripe) would power the pricing tier subscriptions.
+  - I understand every file in this repository and can explain or modify any component during technical review.
