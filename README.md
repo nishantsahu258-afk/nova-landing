@@ -80,23 +80,17 @@ The page is built as a single-page marketing site inspired by modern developer t
 
 ## Screenshots
 
-<!-- 
-To include local screenshot images:
-1. Place your screenshots in public/screenshots/ (or docs/screenshots/)
-2. Update the markdown links below accordingly.
--->
-
 ### Desktop Views
 
 | Dark Mode (Default) | Light Mode |
-| :--- | :--- |
+| :---: | :---: |
 | ![NOVA Dark Mode Desktop View](public/screenshots/desktop-dark.png)<br>*(Hero section with ambient canvas, dark theme palette, and dashboard preview)* | ![NOVA Light Mode Desktop View](public/screenshots/desktop-light.png)<br>*(Light theme palette with warm paper background and high-contrast typography)* |
 
-### Mobile View & Interactive Modal
+### Mobile Views (Responsive)
 
-| Mobile Navigation Drawer | Interactive Demo Modal |
-| :--- | :--- |
-| ![NOVA Mobile View](public/screenshots/mobile-view.png)<br>*(Responsive navigation drawer with quick links and theme toggle)* | ![NOVA Demo Modal](public/screenshots/demo-modal.png)<br>*(3-tab platform tour modal with simulated workflows and controls)* |
+| Dark Mode (Mobile) | Light Mode (Mobile) |
+| :---: | :---: |
+| ![NOVA Dark Mode Mobile View](public/screenshots/mobile-dark.png)<br>*(Responsive mobile layout, dark mode header, and hero stack)* | ![NOVA Light Mode Mobile View](public/screenshots/mobile-light.png)<br>*(Responsive mobile layout, light mode header, and hero stack)* |
 
 > *Tip: You can test all themes, layouts, and interactive components directly on the [Live Demo](https://nova-landing-orpin.vercel.app/).*
 
