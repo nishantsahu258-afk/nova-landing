@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, Play } from "lucide-react";
+import HeroBackground from "./HeroBackground";
 
 /**
  * Hero section. This is the one place the design spends its "boldness":
@@ -12,22 +13,10 @@ export default function Hero({ onOpenDemo }) {
       id="top"
       className="relative overflow-hidden bg-paper dark:bg-ink pt-32 pb-24 sm:pt-40 sm:pb-32"
     >
-      {/* Bold visual moment: a soft radiating burst, unique to the hero */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[560px] w-[560px] rounded-full bg-signal/25 blur-[120px] animate-burst"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-10 right-10 h-2 w-2 rounded-full bg-signal animate-drift"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-40 right-1/3 h-1.5 w-1.5 rounded-full bg-ember animate-drift"
-        style={{ animationDelay: "1.5s" }}
-      />
+      {/* 3D ambient animated background layer (Canvas + Flowing Gradients) */}
+      <HeroBackground />
 
-      <div className="container-page relative grid lg:grid-cols-[1.05fr_0.95fr] gap-16 items-center">
+      <div className="container-page relative z-10 grid lg:grid-cols-[1.05fr_0.95fr] gap-16 items-center">
         <div>
           <p className="text-sm font-medium text-signal-dim dark:text-signal mb-5">
             AI productivity platform for growing teams
